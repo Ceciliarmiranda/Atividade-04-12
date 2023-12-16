@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+
+public class Vitrine {
+    public static void main(String[] args) {
+
+        ArrayList<ItemDaLoja> itensLoja = new ArrayList<>();
+
+        ItemDaLoja item1 = new ItemDaLoja();
+        ItemDaLoja item2 = new ItemDaLoja();
+        ItemDaLoja item3 = new ItemDaLoja();
+
+        item1.setNome("Andamento");
+        item1.setValor(25.00);
+        item1.setCodigo(12376587);
+
+        itensLoja.add(item1);
+
+        item2.setNome("A volta dos que não foram");
+        item2.setValor(35.00);
+        item2.setCodigo(98765432);
+
+        itensLoja.add(item2);
+
+        // Se necessário, você pode adicionar mais itens aqui
+
+        // Exemplo de como listar os itens
+        for (ItemDaLoja item : itensLoja) {
+            System.out.println("Nome: " + item.getNome());
+            System.out.println("Valor: " + item.getValor());
+            System.out.println("Código: " + item.getCodigo());
+            System.out.println("=============================");
+        }
+    }
+}
