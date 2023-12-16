@@ -1,0 +1,6 @@
+Public class ItemDoCarrinho{
+  String nome;
+  int id;
+  int quantidade;
+  Double valor;
+}
